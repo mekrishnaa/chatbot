@@ -1,0 +1,31 @@
+{
+  "name": "organization-ai",
+  "version": "1.0.0",
+  "description": "Organization AI Assistant with Angular, NestJS, pgvector and RAG",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:shared": "npm run build --workspace=@org-ai/shared",
+    "build:api": "npm run build --workspace=@org-ai/api",
+    "build:web": "npm run build --workspace=@org-ai/web",
+    "build": "npm run build:shared && npm run build:api && npm run build:web",
+    "start:api": "npm run start:dev --workspace=@org-ai/api",
+    "start:web": "npm run start --workspace=@org-ai/web"
+  },
+  "keywords": [
+    "rag",
+    "angular",
+    "nestjs",
+    "pgvector",
+    "ai",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^18.2.14"
+  }
+}

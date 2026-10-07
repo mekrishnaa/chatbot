@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.angular/
+storage/documents/*
+!storage/documents/.gitkeep
+.env
+*.log
+.DS_Store
+Thumbs.db
+
